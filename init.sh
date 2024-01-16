@@ -7,8 +7,8 @@ currentPath="$(pwd)"
 # 	sudo ln -s "$currentPath"/"$file" /etc/nixos/"$file"
 # done
 
-rm -rf ~/nix
-ln -s $currentPath/nix ~/nix
+rm -rf ~/.config/nix
+ln -s $currentPath/.config/nix ~/.config/nix
 
 rm -rf ~/.config/nix
 ln -s $currentPath/config/nix ~/.config/nix

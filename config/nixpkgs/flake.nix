@@ -28,8 +28,8 @@
 
     homeConfigurations.popos = mkHomeConfiguration {
       extraSpecialArgs = {
-        withGUI = false ;
-        isDesktop = false;
+        withGUI = true;
+        isDesktop = true;
         networkInterface = "enp5s0";
       };
     };
