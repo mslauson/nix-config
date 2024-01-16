@@ -10,5 +10,8 @@ currentPath="$(pwd)"
 rm -rf ~/nix
 ln -s $currentPath/nix ~/nix
 
+rm -rf ~/.config/nix
+ln -s $currentPath/config/nix ~/.config/nix
+
 # nix --extra-experimental-features nix-command run nixpkgs#home-manager -- switch --flake ~/nix/flakes.nix
-nix --extra-experimental-features "nix-command flakes" build ~/nix/
+nix build $currentPath/nix
